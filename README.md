@@ -45,11 +45,12 @@ python stock_analysis.py
 ```
 
 ## 5. 性能表现 (Performance)
-*基于最新一次的随机森林 (Random Forest) 回测结果（已修复数据泄露）：*
-- **年化收益率 (Annual Return)**: ~30.03%
-- **夏普比率 (Sharpe Ratio)**: ~4.08
-- **最大回撤 (Max Drawdown)**: -2.95%
-*(注：RandomForest 在多轮测试中表现出最佳的风险收益比，优于 XGBoost 和 LightGBM)*
+*基于修复了数据泄露和时间线分割逻辑后的随机森林 (Random Forest) 最终结果：*
+- **年化收益率 (Annual Return)**: ~12.36%
+- **夏普比率 (Sharpe Ratio)**: ~2.08
+- **最大回撤 (Max Drawdown)**: -3.34%
+- **预测精准率 (Precision)**: ~56.64%
+*(注：修复后的结果更符合机构级量化标准，证明了策略在排除未来函数后的稳健性)*
 
 ## 6. 文件结构
 - `stock_analysis.py`: 核心代码，包含所有逻辑。
@@ -58,4 +59,3 @@ python stock_analysis.py
 - `final_multi_stock_backtest.png`: 最终的组合回测净值曲线。
 
 ---
-

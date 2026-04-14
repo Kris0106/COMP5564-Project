@@ -1,0 +1,22 @@
+.DS_Store
+**/.DS_Store
+
+# Office / editor temp
+.~*
+
+# Large archives / duplicates (keep source in repo, not zip)
+COMP5564 Project.zip
+
+# Large media (presentation exports)
+*.mov
+*.MOV
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+
+# macOS zip metadata inside datasets
+**/__MACOSX/
